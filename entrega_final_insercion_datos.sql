@@ -14,9 +14,9 @@ SELECT * FROM pais;
 
 #Tabla 'usuario'
 INSERT INTO usuario(id_usuario,nombre,apellido,rut,correo,fk_id_pais,fk_id_plan,nombre_plan)
-VALUES(NULL,"Nicolás","Vera","202994520","nicolas.vera.gonz@gmail.com",1,1,"basic"),
-(NULL,"Nigulashi","Vera","123456789","xuexiao@gmail.com",2,2,"lite"),
-(NULL,"Camilo","Gonzalez","987654321","camilo.gonzalez@gmail.com",1,3,"full"),
+VALUES(NULL,"Nicolás","Vera",202994520,"nicolas.vera.gonz@gmail.com",1,1,"basic"),
+(NULL,"Nigulashi","Vera",123456789,"xuexiao@gmail.com",2,2,"lite"),
+(NULL,"Camilo","Gonzalez",987654321,"camilo.gonzalez@gmail.com",1,3,"full"),
 (NULL, 'Juan', 'Pérez', 11111111, 'juan.perez1@gmail.com', 1, 1, 'basic'),
 (NULL, 'María', 'Gómez', 22222222, 'maria.gomez2@gmail.com', 1, 2, 'lite'),
 (NULL, 'Pedro', 'Soto', 33333333, 'pedro.soto3@gmail.com', 1, 3, 'full'),
