@@ -202,6 +202,10 @@ LEFT JOIN usuario u ON p.fk_id_usuario = u.id_usuario
 GROUP BY correo,moneda
 ORDER BY moneda, total_pagado DESC;
 
+# Ejemplo uso Vista
+
+SELECT * from venta_usuario_ranking;
+
 
 #####################################
 #                                   #
@@ -232,9 +236,12 @@ END IF;
 RETURN nombre_completo;
 END //
 
+DELIMITER ;
+
+# Ejemplo uso función
+
 SELECT obtener_nombre(202994520);
 
-DELIMITER ;
 
 ## FUNCIÓN 2: total_pagado_por usuario
 ## Descripción detallada: Quiero ver el total pagado por un usuario específico según su correo.
@@ -258,7 +265,7 @@ BEGIN
 
 DELIMITER ;
 
-#Uso de función
+#Ejemplo uso de función
 
 SELECT total_pagado_por_usuario('nicolas.vera.gonz@gmail.com');
 
@@ -370,6 +377,7 @@ DELIMITER ;
 #SET correo = 'nico@gmail.com'
 #WHERE correo = 'nicolas.vera.gonz@gmail.com';
 #SELECT * FROM log_cambio_correo;
+
 
 
  
